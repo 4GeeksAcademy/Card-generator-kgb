@@ -1,1 +1,36 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  margin: 0;
+  height: 100vh;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.suit,
+.value {
+  font-size: 2em;
+  text-align: center;
+}
+
+#top-suit {
+  align-self: flex-start;
+}
+
+#bottom-suit {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
